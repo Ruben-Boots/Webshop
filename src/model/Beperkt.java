@@ -2,7 +2,7 @@ package model;
 
 public class Beperkt extends Product {
 	public Beperkt(String naam, int prijsPerEenheid, String imageUrl, int eenheid) {
-		super(naam, prijsPerEenheid, imageUrl, eenheid);		
+	//	super(naam, prijsPerEenheid, imageUrl, eenheid);		
 	}
 	
 	public Beperkt(String naam, int prijsPerEenheid, String imageUrl) {

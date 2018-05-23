@@ -2,7 +2,7 @@ package model;
 
 public class KwantumKorting extends Product{
 	public KwantumKorting(String naam, int prijsPerEenheid, String imageUrl, int eenheid) {
-		super(naam, prijsPerEenheid, imageUrl, eenheid);		
+	//	super(naam, prijsPerEenheid, imageUrl, eenheid);		
 	}
 	
 	public KwantumKorting(String naam, int prijsPerEenheid, String imageUrl) {
