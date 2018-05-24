@@ -26,7 +26,7 @@ public class Beperkt extends Product {
 	}
 	
 	public int getPrijs(int hoeveelheid) {
-		if (hoeveelheid > 3) {
+		if (hoeveelheid < 3) {
 			return hoeveelheid*getPrijsPerEenheid();
 		}else {
 		return 2 * getPrijsPerEenheid();
