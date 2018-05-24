@@ -19,7 +19,7 @@ public abstract class Product {
 	}
 	
 	public String toString() {
-		return getNaam();
+		return getNaam() + ", " + getEenheidNaam() + ", " + getPrijsPerEenheid();
 	}
 	
 	public int getPrijs(int hoeveelheid) {
@@ -37,5 +37,7 @@ public abstract class Product {
 	
 	abstract public int getEenheid();
 	abstract public void setEenheid(int eenheid);
+	
+	abstract public String getEenheidNaam();
 	
 }
