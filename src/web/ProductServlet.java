@@ -33,6 +33,11 @@ public class ProductServlet extends HttpServlet {
 		response.getWriter().append("<p>De " + Index.voorraad.get(id).getNaam().toLowerCase() + " kost ");
 		response.getWriter().append(Index.voorraad.get(id).getPrijsPerEenheid() + " monetaire eenheden per ");
 		response.getWriter().append(Index.voorraad.get(id).getEenheidNaam() + ".");
+		response.getWriter().append("<h2>Bestellen</h2>");
+		response.getWriter().append("<form method=\"post\" action=\"\">");
+		response.getWriter().append("Aantal: <input type=\"text\">");
+		response.getWriter().append("<input type=\"submit\" value=\"aantal\">");
+		response.getWriter().append("</form>");
 		response.getWriter().append("</div>");
 		
 		response.getWriter().append("<div class=\"picture\">");
@@ -49,6 +54,10 @@ public class ProductServlet extends HttpServlet {
 		
 		response.getWriter().append("</div>");
 		response.getWriter().append("</body></html>");
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 	}
 
 

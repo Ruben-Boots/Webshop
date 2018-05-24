@@ -10,12 +10,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import bestel.Winkelwagen;
+
 /**
  * Servlet implementation class HelloWorldServlet
  */
 @WebServlet("/index.html")
 public class Index extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	static public Winkelwagen wagen = new Winkelwagen();
 	static ArrayList<Product> voorraad = new ArrayList<>();
 	{
 		voorraad.add(new DefaultProduct("Koffie"   ,20  ,"koffie.jpg"   ,2));
