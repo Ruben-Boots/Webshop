@@ -36,7 +36,7 @@ public class DefaultProduct extends Product{
 		return prijsPerEenheid;
 	}
 	public void setPrijsPerEenheid(int eenheid) {
-		this.eenheid = eenheid;
+		this.prijsPerEenheid = eenheid;
 	}
 	
 	public String getImageUrl() {

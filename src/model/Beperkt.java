@@ -43,8 +43,8 @@ public class Beperkt extends Product {
 	public int getPrijsPerEenheid() {
 		return prijsPerEenheid;
 	}
-	public void setPrijsPerEenheid(int eenheid) {
-		this.eenheid = eenheid;
+	public void setPrijsPerEenheid(int prijsPerEenheid) {
+		this.prijsPerEenheid = prijsPerEenheid;
 	}
 	
 	public String getImageUrl() {
