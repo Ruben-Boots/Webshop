@@ -34,8 +34,9 @@ public class Index extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("<html><head><link rel=\"stylesheet\" href=\"style.css\"></head><body>");
 		
-		response.getWriter().append("<h1>Welkom in de webshop</h1>");
-		response.getWriter().append("<table><th>Product</th><th>Prijs</th><th>Per</th>");
+		response.getWriter().append("<div class=\"grid-container\">");
+		response.getWriter().append("<div class=\"header\"><h1>Welkom in de webshop</h1></div>");
+		response.getWriter().append("<div class=\"content\"><table><th>Product</th><th>Prijs</th><th>Per</th>");
 		int id=0;
 		for (Product p : voorraad) {
 			response.getWriter().append("<tr><td><a href=\"product?id=" + id + "\">" + p.getNaam() + "</a></td>");
@@ -44,8 +45,19 @@ public class Index extends HttpServlet {
 			id++;
 		}
 		
-		response.getWriter().append("</table>");
+		response.getWriter().append("</table></div>");
+		response.getWriter().append("<div class=\"picture\">");
+		response.getWriter().append("<img src=\"webshop.png\">");
+		response.getWriter().append("</div>");
 		
+		response.getWriter().append("<div class=\"menu\">");
+		response.getWriter().append("<a href=\"index.html\"> Index </a>");
+		response.getWriter().append("<a href=\"winkelwagen.html\"> Winkelwagen </a>");
+		response.getWriter().append("</div>");
+		
+		response.getWriter().append("<div class=\"footer\"> <p>Dit is de voettekst van de mooiste webwinkel EVER!! </div>");
+		
+		response.getWriter().append("</div>");
 		response.getWriter().append("</body></html>");
 	}
 }
